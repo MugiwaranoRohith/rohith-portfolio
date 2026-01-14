@@ -13,9 +13,11 @@ function Hero() {
   </div>
 
   {/* IMAGE */}
-  <img src="/hero.png" alt="Hero" style={styles.image} />
-
-  {/* RIGHT */}
+  {/* <img src="/hero.png" alt="Hero" style={styles.image} /> */}
+<div style={{ ...styles.textBlock, }}>
+    <h1 style={styles.mainTitle}>Rohith E</h1>
+  
+  </div>  {/* RIGHT */}
   <div style={{ ...styles.textBlock, right: "10%", textAlign: "right" }}>
     <h1 style={styles.rightTitle}>&lt;coder&gt;</h1>
     <p style={styles.subtitle}>
@@ -56,6 +58,12 @@ margin: "0 auto",
     fontWeight: "700",
     marginBottom: "12px",
     color: "#222",
+  },
+    mainTitle: {
+    fontSize: "70px",
+    fontWeight: "700",
+    marginBottom: "12px",
+    color: "grey",
   },
 
   rightTitle: {
