@@ -1,51 +1,62 @@
+import { useState } from "react";
+import "./Navbar.css";
+
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav style={styles.nav}>
-      <div style={styles.logo}>Rohith E</div>
-<ul style={styles.menu}>
-  <li><a href="#about" style={styles.navLink}>About</a></li>
-  <li><a href="#projects" style={styles.navLink}>Portfolio</a></li>
-  <li><a href="#contact" style={styles.navLink}>Contact</a></li>
-</ul>
+    <nav className="navbar">
+      {/* Logo */}
+      <div className="navbar-logo">Rohith E</div>
+      {/* Desktop Menu */}
+      <ul className="navbar-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="/Rohith_E_Software_engineer1.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="resume-link"
+          >
+            Resume ↓
+          </a>
+        </li>
+      </ul>
 
+      {/* Mobile Hamburger */}
+      <button
+        className="navbar-toggle"
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle menu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
 
-   
+      {/* Mobile Menu */}
+      {open && (
+        <ul className="navbar-mobile">
+          <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
+          <li><a href="#projects" onClick={() => setOpen(false)}>Portfolio</a></li>
+          <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+          <li>
+            <a
+              href="/Rohith_E_Frontend_Developer.pdf"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setOpen(false)}
+              className="resume-link mobile-resume"
+            >
+              Resume ↓
+            </a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 }
-
-const styles = {
-  nav: {
-    height: "60px",
-backgroundColor: "#111",
-borderBottom: "1px solid #222",
-
-    color: "#fff",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0 40px",
-  },
-  logo: {
-    fontWeight: "bold",
-    fontSize: "20px",
-  },
-  menu: {
-    listStyle: "none",
-    display: "flex",
-    gap: "30px",
-  },
-  socials: {
-    display: "flex",
-    gap: "20px",
-    fontSize: "14px",
-  },
-  navLink: {
-  color: "#fff",
-  textDecoration: "none",
-  fontSize: "14px",
-},
-
-};
 
 export default Navbar;

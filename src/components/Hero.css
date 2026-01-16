@@ -1,0 +1,136 @@
+/* ================= DESKTOP ================= */
+
+.hero-section {
+  position: relative;
+  height: calc(100vh - 60px);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 200, 150, 0.25), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(150, 200, 255, 0.25), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(180, 255, 200, 0.25), transparent 40%);
+  animation: floatBg 20s ease-in-out infinite;
+}
+
+@keyframes floatBg {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-block {
+  position: absolute;
+  z-index: 2;
+  max-width: 320px;
+}
+
+.hero-left {
+  left: 8%;
+  text-align: left;
+}
+
+.hero-center {
+  text-align: center;
+}
+
+.hero-right {
+  right: 8%;
+  text-align: right;
+}
+
+.hero-title {
+  font-size: 70px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.left-title {
+  font-weight: 700;
+  color: #222;
+}
+
+.main-title {
+  font-weight: 700;
+  color: #999;
+}
+
+.right-title {
+  font-weight: 600;
+  font-family: monospace;
+  color: #222;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-left {
+    left: 5%;
+  }
+
+  .hero-right {
+    right: 5%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 120px 16px 80px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-block {
+    position: static;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    text-align: center;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-section {
+    padding-top: 100px;
+  }
+}

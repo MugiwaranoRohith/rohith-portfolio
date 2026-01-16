@@ -1,0 +1,96 @@
+/* ================= DESKTOP ================= */
+
+.experience-section {
+  padding: 140px 100px 120px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.experience-heading {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.experience-company {
+  max-width: 900px;
+}
+
+.company-name {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.company-duration {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 32px;
+}
+
+.experience-role {
+  margin-bottom: 32px;
+}
+
+.role-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.role-list {
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .experience-section {
+    padding: 120px 48px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 80px 16px;
+  }
+
+  .experience-heading {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .company-name {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .company-duration {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .role-title {
+    font-size: 16px;
+  }
+
+  .role-list {
+    font-size: 13px;
+    padding-left: 16px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .experience-heading {
+    font-size: 24px;
+  }
+
+  .company-name {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,133 @@
+/* ================= DESKTOP DEFAULT ================= */
+
+.projects-section {
+  padding: 120px 100px;
+  background-color: #fff;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.projects-heading {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.projects-subheading {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 60px;
+  max-width: 520px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.project-card {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 32px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover only where hover exists */
+@media (hover: hover) {
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.project-tech {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.project-link {
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 96px 48px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 64px 16px;
+    max-width: 100%;
+  }
+
+  .projects-heading {
+    font-size: 28px;
+  }
+
+  .projects-subheading {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .projects-heading {
+    font-size: 24px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-desc {
+    font-size: 13px;
+  }
+}

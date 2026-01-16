@@ -1,0 +1,106 @@
+/* ================= BASE ================= */
+
+.navbar {
+  height: 60px;
+  background-color: #111;
+  border-bottom: 1px solid #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ================= DESKTOP MENU ================= */
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Resume link (subtle highlight) */
+.resume-link {
+  font-weight: 600;
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* ================= HAMBURGER ================= */
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+/* ================= MOBILE MENU ================= */
+
+.navbar-mobile {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #111;
+  list-style: none;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-mobile a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Make resume stand out slightly on mobile */
+.mobile-resume {
+  border: 1px solid #555;
+  padding: 8px 16px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
