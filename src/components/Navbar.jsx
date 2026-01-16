@@ -44,7 +44,7 @@ function Navbar() {
           <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
           <li>
             <a
-              href="/Rohith_E_Frontend_Developer.pdf"
+              href="/Rohith_E_Software_engineer1.pdf"
               download
               onClick={() => setOpen(false)}
               className="resume-link mobile-resume"
