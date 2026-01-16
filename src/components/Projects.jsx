@@ -12,34 +12,49 @@ function Projects() {
       <div className="projects-grid">
         {/* Project 1 */}
         <div className="project-card">
-          <h3 className="project-title">Lawyer Tiptap Editor</h3>
+          <h3 className="project-title">Cosmic Exploration</h3>
+
+          <img
+            src="/cosmic.png"
+            alt="Cosmic Exploration preview"
+            className="project-image"
+          />
+
           <p className="project-desc">
-            Rich text editor built using Tiptap with custom toolbar,
-            formatting options, and clean UI.
+            A visual journey through space exploration.
           </p>
+
           <p className="project-tech">
-            React · Tiptap · JavaScript
+            React · CSS · JavaScript
           </p>
-          <a
-            className="project-link"
-            href="https://github.com/MugiwaranoRohith/Lawyers-tiptap"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View on GitHub →
-          </a>
+
+          <div className="project-actions">
+            <a
+              href="https://rohithspace2.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-preview"
+            >
+              Live Preview
+            </a>
+
+           
+          </div>
         </div>
 
         {/* Project 2 */}
-        <div className="project-card">
+        {/* <div className="project-card">
           <h3 className="project-title">Shopify Frontend</h3>
+
           <p className="project-desc">
-            Shopify frontend customization with product pages,
-            reusable UI components, and responsive design.
+            Shopify frontend customization with product pages, reusable UI
+            components, and responsive design.
           </p>
+
           <p className="project-tech">
             Shopify · HTML · CSS · JavaScript
           </p>
+
           <a
             className="project-link"
             href="https://github.com/MugiwaranoRohith/Rohith-E"
@@ -48,26 +63,36 @@ function Projects() {
           >
             View on GitHub →
           </a>
-        </div>
+        </div> */}
 
         {/* Project 3 */}
         <div className="project-card">
           <h3 className="project-title">Star Wars Explorer</h3>
+
+   <img
+            src="/starwars.png"
+            alt="Star Wars preview"
+            className="project-image"
+          />
+
           <p className="project-desc">
-            API-based React app using Star Wars API with search,
-            pagination, and clean UI handling.
+            API-based React app using Star Wars API with search and pagination.
           </p>
+
           <p className="project-tech">
-            React · REST API · JavaScript
+            Angular · REST API · JavaScript
           </p>
-          <a
-            className="project-link"
-            href="https://github.com/MugiwaranoRohith/Rohith_Star_Wars"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View on GitHub →
-          </a>
+
+
+ <a
+              href="https://rohithstar.vercel.app/characters"
+              target="_blank"
+              rel="noreferrer"
+              className="project-preview"
+            >
+              Live Preview
+            </a>
+       
         </div>
       </div>
     </section>
