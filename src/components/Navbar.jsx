@@ -8,6 +8,7 @@ function Navbar() {
     <nav className="navbar">
       {/* Logo */}
       <div className="navbar-logo">Rohith E</div>
+
       {/* Desktop Menu */}
       <ul className="navbar-menu">
         <li><a href="#about">About</a></li>
@@ -16,8 +17,7 @@ function Navbar() {
         <li>
           <a
             href="/Rohith_E_Software_engineer1.pdf"
-            target="_blank"
-            rel="noreferrer"
+            download
             className="resume-link"
           >
             Resume ↓
@@ -45,8 +45,7 @@ function Navbar() {
           <li>
             <a
               href="/Rohith_E_Frontend_Developer.pdf"
-              target="_blank"
-              rel="noreferrer"
+              download
               onClick={() => setOpen(false)}
               className="resume-link mobile-resume"
             >
