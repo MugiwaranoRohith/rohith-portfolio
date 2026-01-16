@@ -28,7 +28,6 @@ function Projects() {
             React · CSS · JavaScript
           </p>
 
-          <div className="project-actions">
             <a
               href="https://rohithspace2.vercel.app/"
               target="_blank"
@@ -39,33 +38,9 @@ function Projects() {
             </a>
 
            
-          </div>
         </div>
 
-        {/* Project 2 */}
-        {/* <div className="project-card">
-          <h3 className="project-title">Shopify Frontend</h3>
-
-          <p className="project-desc">
-            Shopify frontend customization with product pages, reusable UI
-            components, and responsive design.
-          </p>
-
-          <p className="project-tech">
-            Shopify · HTML · CSS · JavaScript
-          </p>
-
-          <a
-            className="project-link"
-            href="https://github.com/MugiwaranoRohith/Rohith-E"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View on GitHub →
-          </a>
-        </div> */}
-
-        {/* Project 3 */}
+    
         <div className="project-card">
           <h3 className="project-title">Star Wars Explorer</h3>
 
