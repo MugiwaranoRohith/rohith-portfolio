@@ -42,6 +42,36 @@ function Projects() {
 
     
         <div className="project-card">
+          <h3 className="project-title">The Fit Club</h3>
+
+   <img
+            src="/gym.png"
+            alt="gym preview"
+            className="project-image"
+          />
+
+          <p className="project-desc">
+            Built a responsive gym & workout tracker web app using React, Tailwind CSS, and Framer Motion with plan selection and localStorage-based workout tracking.
+          </p>
+
+          <p className="project-tech">
+            React · Tailwind CSS · JavaScript
+          </p>
+
+
+ <a
+              href="https://rohithgym.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="project-preview"
+            >
+              Live Preview
+            </a>
+       
+        </div>
+
+
+         <div className="project-card">
           <h3 className="project-title">Star Wars Explorer</h3>
 
    <img
