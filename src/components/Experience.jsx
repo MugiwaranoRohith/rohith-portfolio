@@ -11,29 +11,26 @@ function Experience() {
         </h3>
         <p className="company-duration">Feb 2023 – Jul 2025</p>
 
-        <div className="experience-role">
-          <h4 className="role-title">
-            Node Management Module (Telecom Platform)
-          </h4>
-          <ul className="role-list">
-            <li>
-              Built Angular (v12+) user interfaces using Reactive Forms and
-              Angular Material for managing telecom nodes.
-            </li>
-            <li>
-              Implemented add, edit, delete, and bulk-edit workflows with
-              validation and error handling.
-            </li>
-            <li>
-              Integrated REST APIs and optimized performance using lazy loading
-              and RxJS techniques.
-            </li>
-            <li>
-              Reduced manual effort of NOC teams by approximately 35% through
-              streamlined UI workflows.
-            </li>
-          </ul>
-        </div>
+       <div className="experience-role">
+  <h4 className="role-title">
+    Node Management Module (Telecom Platform)
+  </h4>
+  <ul className="role-list">
+    <li>
+      Developed a React-based frontend module to manage telecom network nodes with reusable components and clean UI architecture.
+    </li>
+    <li>
+      Designed CRUD and bulk update workflows with client-side validation and error handling.
+    </li>
+    <li>
+      Consumed RESTful APIs and improved performance using lazy loading and optimized state handling.
+    </li>
+    <li>
+      Improved operational efficiency for NOC teams by reducing manual processes by ~35%.
+    </li>
+  </ul>
+</div>
+
 
         <div className="experience-role">
           <h4 className="role-title">
