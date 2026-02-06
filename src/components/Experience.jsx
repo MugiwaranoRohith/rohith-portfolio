@@ -5,6 +5,35 @@ function Experience() {
     <section className="experience-section" id="experience">
       <h2 className="experience-heading">Professional Experience</h2>
 
+   
+   
+       <div className="experience-company">
+        <h3 className="company-name">
+          Software Engineer II · TrueZen Technologies
+        </h3>
+        <p className="company-duration">Sep 2025 – Current</p>
+
+       <div className="experience-role">
+  <h4 className="role-title">
+Enterprise Admin & Analytics Dashboard (Ongoing)
+  </h4>
+  <ul className="role-list">
+    <li>
+Leading frontend implementation of a corporate-grade analytics and admin dashboard using React, TypeScript, Redux, and REST APIs.    </li>
+    <li>
+Developed reusable UI components (navigation, charts, forms, tables) with dynamic routing, client-side validation, and secure authenticated sessions.    </li>
+    <li>
+Integrated real-time data display using chart libraries  and built responsive layouts optimized for performance.    </li>
+    <li>
+Executed Agile workflows using Jira — writing user stories, estimating tasks, collaborating with backend/QA, and closing tickets across multiple sprints.    </li>
+  </ul>
+</div>
+
+
+      </div>
+
+
+   
       <div className="experience-company">
         <h3 className="company-name">
           Software Engineer I · Terralogic Software Solutions
@@ -57,30 +86,7 @@ function Experience() {
         </div>
       </div>
 
-            <div className="experience-company">
-        <h3 className="company-name">
-          Software Engineer II · TrueZen Technologies
-        </h3>
-        <p className="company-duration">Sep 2025 – Current</p>
-
-       <div className="experience-role">
-  <h4 className="role-title">
-Enterprise Admin & Analytics Dashboard (Ongoing)
-  </h4>
-  <ul className="role-list">
-    <li>
-Leading frontend implementation of a corporate-grade analytics and admin dashboard using React, TypeScript, Redux, and REST APIs.    </li>
-    <li>
-Developed reusable UI components (navigation, charts, forms, tables) with dynamic routing, client-side validation, and secure authenticated sessions.    </li>
-    <li>
-Integrated real-time data display using chart libraries  and built responsive layouts optimized for performance.    </li>
-    <li>
-Executed Agile workflows using Jira — writing user stories, estimating tasks, collaborating with backend/QA, and closing tickets across multiple sprints.    </li>
-  </ul>
-</div>
-
-
-      </div>
+     
     </section>
   );
 }
